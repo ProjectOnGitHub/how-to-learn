@@ -81,6 +81,11 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+  z-index: 0;
+  background-color: #2f80ed;
+  position: absolute;
+  margin-top: 64px;
+  right: 0;
 }
 
 /* Секция, блок description 2/6 */
