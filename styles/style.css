@@ -11,25 +11,46 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
 }
-/*
-Блок logo, модификатор place со значением header. Для таких случаев
-используют модификаторы вида "ключ-значение". Их записывают
-таким образом: block__element_key_value. Но можно применять и для
-блока logo_place_header.
-*/
 
 /* Шапка сайта, блок header 1/6 */
 
+.logo {
+  z-index: 99;
+
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-image: url(../images/logo_place_header.svg);
+  width: 183px;
+  height: 32px;
+}
+
+.logo_place_footer {
+
+}
+
 .header {
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
 .header__title {
-
+  width: 730px;
+  align-self: center;
+  margin-left: 64px;
+  font-weight: bold;
+  font-size: 102px;
+  line-height: 96px;
 }
 
 .header__subtitle {
