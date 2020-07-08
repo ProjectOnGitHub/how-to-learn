@@ -14,10 +14,6 @@
   box-sizing: border-box;
 }
 
-.position_absolute {
-
-}
-
 /* Шапка сайта, блок header 1/6 */
 
 .logo {
@@ -28,7 +24,7 @@
 .logo_place_header {
   position: absolute;
   top: 30px;
-  margin-left: 64px;
+  left: 64px;
   width: 183px;
   height: 32px;
 }
@@ -44,6 +40,7 @@
   max-height: 756px;
   background-color: #f2f2f2;
   position: relative;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -82,7 +79,6 @@
   z-index: 98;
 }
 
-
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -90,44 +86,73 @@
   z-index: 0;
   background-color: #2f80ed;
   position: absolute;
-  margin-top: 64px;
+  top: 64px;
   right: 0;
+}
+
+.content {
 }
 
 /* Секция, блок description 2/6 */
 
 .description {
-
+  display: flex;
 }
 
 .two-columns {
-
+  width: 80%;
+  min-height: 80;
+  margin: 100px auto 0;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
-
+  width: 175px;
+  align-self: stretch;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
-
-}
+  width: 80%;
+  min-width: 784px;
+  font-size: 24px;
+  line-height: 34px;
+ }
 
 .two-columns__paragraph {
+  margin: 0;
+}
 
+.two-columns__paragraph:nth-child(2n) {
+  margin: 30px 0;
 }
 
 .two-columns__span-accent {
-
+  font-weight: bold;
+  padding: 0;
 }
 
 /* Секция, блок digits 3/6 */
 
 .digits {
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .section-title {
-
+  margin: 100px auto 20px;
+  width: 60%;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold; 
 }
 
 .section-subtitle {
@@ -135,7 +160,8 @@
 }
 
 .table {
-
+  flex-direction: row;
+  flex-wrap;
 }
 
 .table__cell {
