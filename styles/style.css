@@ -15,11 +15,10 @@
 /* Шапка сайта, блок header */
 
 .logo {
-  z-index: 99;
+  width: 183px;
 }
 
 .logo_place_header {
-  width: 183px;
   height: 32px;
   position: absolute;
   top: 30px;
@@ -116,7 +115,7 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
- }
+}
 
 .two-columns__paragraph {
   margin: 0;
@@ -258,6 +257,7 @@
 .kaufman__triangle {
   z-index: 0;
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -270,13 +270,13 @@
 .footer {
   background-color: #1f1f1f;
   display: flex;
+  min-height: 350px;
 }
 
 .footer__columns {
   display: flex;
   flex-direction: row;
   width: 90%;
-  min-height: 250px;
   margin: 60px auto 40px;
   justify-content: space-between;
   font-size: 18px;
@@ -292,7 +292,6 @@
 }
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
 }
 
