@@ -287,13 +287,18 @@
   line-height: 30px;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .footer__column_content_copyright {
   display: flex;
-  flex-basis: 711px;
   flex-direction: column;
+  flex-basis: 711px;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0;
 }
 
 .logo_place_footer {
@@ -307,10 +312,8 @@
 }
 
 .footer__column_content_info {
-  flex-direction: column;
-  width: auto;
   justify-content: flex-start;
-  margin: 0;
+  align-items: stretch;
 }
 
 .footer__column-heading {
@@ -331,10 +334,8 @@
 }
 
 .footer__column_content_social {
-  flex-direction: column;
-  width: auto;
   justify-content: flex-start;
-  margin: 0;
+  align-items: stretch;
 }
 
 .footer__social-icon {
