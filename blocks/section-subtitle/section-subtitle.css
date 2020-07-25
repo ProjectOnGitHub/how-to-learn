@@ -3,4 +3,5 @@
   margin: 0;
   font-weight: normal;
   text-align: center;
+  z-index: 1;
 }
